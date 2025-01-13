@@ -1,57 +1,63 @@
-# 系统文件
-.DS_Store
-Thumbs.db
+# 系统自动生成的文件
+.DS_Store        # Mac系统中自动生成的文件，用于存储文件夹的显示属性
+Thumbs.db        # Windows系统中自动生成的文件，用于存储文件夹的缩略图缓存
 
-# 编辑器文件
-.idea/
-.vscode/
-*.sublime-project
-*.sublime-workspace
+# 各种编辑器和IDE（集成开发环境）生成的配置文件和目录
+.idea/          # JetBrains系列编辑器（如WebStorm、PhpStorm等）的配置文件夹
+.vscode/        # Visual Studio Code编辑器的配置文件夹
+*.sublime-project   # Sublime Text编辑器的项目文件
+*.sublime-workspace # Sublime Text编辑器的工作区文件
 
-# 依赖目录
-node_modules/
-vendor/
+# 项目依赖文件目录
+node_modules/    # Node.js项目的依赖包目录，通常体积很大
+vendor/         # PHP、Ruby等项目的依赖包目录
 
-# 编译输出
-dist/
-build/
-out/
+# 项目构建后生成的目录
+dist/           # 项目构建后的分发文件目录
+build/          # 项目构建过程中生成的文件目录
+out/            # 输出文件目录
 
-# 日志文件
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# 各种日志文件
+*.log           # 所有以.log结尾的日志文件
+npm-debug.log*  # npm（Node包管理器）的调试日志文件
+yarn-debug.log* # Yarn（另一个Node包管理器）的调试日志文件
+yarn-error.log* # Yarn的错误日志文件
 
-# 环境配置
-.env
-.env.local
-.env.*.local
+# 环境配置文件（通常包含敏感信息如密码、密钥等）
+.env            # 环境配置文件
+.env.local      # 本地环境配置文件
+.env.*.local    # 所有以.local结尾的环境配置文件
 
-# 媒体文件
-*.mp4
-*.mp3
-*.pdf
-*.zip
-*.rar
-*.7z
-*.tar
-*.gz
+# 媒体文件（这些文件通常较大）
+*.mp4           # 视频文件
+*.mp3           # 音频文件
+*.pdf           # PDF文档
+*.zip           # ZIP压缩文件
+*.rar           # RAR压缩文件
+*.7z            # 7Z压缩文件
+*.tar           # TAR打包文件
+*.gz            # GZIP压缩文件
 
 # 数据文件
-*.csv
-*.xls
-*.xlsx
-*.db
-*.sqlite
+*.csv           # CSV格式的数据文件
+*.xls           # Excel 97-2003工作簿
+*.xlsx          # Excel 2007+工作簿
+*.db            # 数据库文件
+*.sqlite        # SQLite数据库文件
 
-# 其他大文件目录
-uploads/
-downloads/
-temp/
-tmp/
-cache/
+# 可能包含大量数据的目录
+uploads/        # 上传文件存储目录
+downloads/      # 下载文件存储目录
+temp/           # 临时文件目录
+tmp/            # 临时文件目录的另一种命名
+cache/          # 缓存文件目录
 
-# WPS文件
-~$*
-.~* 
+# WPS或Office文件的临时文件
+~$*            # 以~$开头的临时文件，如Word打开时的~$document.docx
+.~*            # 以.~开头的临时文件
+
+# 注意：.gitignore文件告诉Git哪些文件和目录不需要追踪
+# 使用#号添加注释
+# *号表示通配符，可以匹配任意字符
+# /结尾表示目录
+# !号表示取反，即不忽略某个文件或目录 
